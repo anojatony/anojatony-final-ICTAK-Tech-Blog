@@ -142,7 +142,7 @@ app.get('/adminposts',function(req,res){
   }) 
 
  // Admin createblog
-app.post('/adminblog',verifyToken,upload.single('image'),function (req,res){
+app.post('/adminblog', upload.single('image'),function (req,res){
   // console.log("hi")
     res.header("Access-Control-Allow-Origin","*")
     res.header("Access-Control-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS");
