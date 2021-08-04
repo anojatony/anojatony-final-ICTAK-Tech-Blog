@@ -158,7 +158,7 @@ drop(event:any){
 
 singleBlog(post:any){
   localStorage.setItem("singleadminblog", post._id.toString());
-  this.router.navigate(['singleblog']);
+  this.router.navigate(['singleadmin']);
 }
 
 logoutUser()

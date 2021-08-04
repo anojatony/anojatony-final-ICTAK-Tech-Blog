@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { SignuptrainerComponent } from './signuptrainer/signuptrainer.component';
+import { SingleadminComponent } from './singleadmin/singleadmin.component';
 import { SingleblogComponent } from './singleblog/singleblog.component';
 import { SinglefeatureComponent } from './singlefeature/singlefeature.component';
 import { SinglehomeComponent } from './singlehome/singlehome.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path:'singlefeature',component:SinglefeatureComponent},
   {path:'singletrending',component:SingletrendingComponent},
   {path:'singlehome',component:SinglehomeComponent},
+  {path:'singleadmin',component:SingleadminComponent},
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
   {path:'signuptrainer',component:SignuptrainerComponent},

@@ -45,6 +45,7 @@
                     <a class="nav-link" routerLink="/blog" >
                         Create Post
                     </a>
+                    <a class="nav-link" style="cursor: pointer;" *ngIf="_auth.loggedIn() || _auth.loggeduserIn() || _auth.loggedtrainerIn()" (click)="logoutUser()">Log Out</a>
                     </div>
                 </div>
             </div> 
@@ -141,7 +142,7 @@
         <footer class="py-4 bg-light mt-auto">
             <div class="container-fluid">
                 <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                    <div class="text-muted">Copyright &copy; ICTAK Tech Blog 2021</div>
                     <div>
                         <a href="#">Privacy Policy</a>
                         &middot;
