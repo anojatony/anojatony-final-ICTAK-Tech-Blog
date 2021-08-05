@@ -23,7 +23,6 @@ export class SingletrendingComponent implements OnInit {
 
   ngOnInit(): void {
 
-    setTimeout(() => { this.ngOnInit() }, 1000 * 1)
     
 let tpostid = localStorage.getItem("singletblog");
 this.blogService.gettrendingBlog(tpostid).subscribe((data)=>{

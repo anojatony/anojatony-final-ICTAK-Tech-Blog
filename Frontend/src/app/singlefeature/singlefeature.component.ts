@@ -26,7 +26,6 @@ export class SinglefeatureComponent implements OnInit {
 
   ngOnInit(): void {
     
-    setTimeout(() => { this.ngOnInit() }, 1000 * 1)
     
   let fpostid = localStorage.getItem("singlefblog");
   this.blogService.getfeaturedBlog(fpostid).subscribe((data)=>{

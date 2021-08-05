@@ -92,7 +92,7 @@ post={
   ngOnInit(): void {
      
  
-  //  this.interval = setTimeout(() => { this.ngOnInit() }, 1000 * 3)
+
 
     let postid = localStorage.getItem("singleblog");
     this.blogService.getBlog(postid).subscribe((data)=>{
@@ -113,18 +113,10 @@ post={
   })
 
 
-  
- 
 
 
   }
 
-
-// ngOnDestroy() {
-// if (this.interval) {
-//     clearInterval(this.interval);
-//   }
-// }
 
 
   logoutUser()

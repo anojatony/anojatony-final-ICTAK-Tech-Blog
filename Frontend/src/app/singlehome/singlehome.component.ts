@@ -25,7 +25,7 @@ export class SinglehomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-  setTimeout(() => { this.ngOnInit() }, 1000 * 1)
+
 
   let hpostid = localStorage.getItem("singlehblog");
   this.blogService.gethomeBlog(hpostid).subscribe((data)=>{

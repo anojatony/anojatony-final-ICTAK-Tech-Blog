@@ -29,7 +29,6 @@ export class CategoryComponent implements OnInit {
 
   ngOnInit(): void {
 
-    setTimeout(() => { this.ngOnInit() }, 1000 * 1)
     
     this.router.params.subscribe(params => {
       this.cat=params.cat;
