@@ -44,8 +44,8 @@ export class LoginComponent implements OnInit {
 
     if(err){
     console.log(err);
-    alert("hi")
-    this._router.navigate(['login'])
+    // alert("hi")
+    // this._router.navigate(['login'])
     }
   
     
