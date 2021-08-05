@@ -28,7 +28,6 @@ export class SingleadminComponent implements OnInit {
 
   ngOnInit(): void {
    
-    setTimeout(() => { this.ngOnInit() }, 1000 * 1)
 
     let postadminid = localStorage.getItem("singleadminblog");
     this.blogService.getadminBlog(postadminid).subscribe((data)=>{
