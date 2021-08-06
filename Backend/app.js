@@ -217,7 +217,7 @@ app.get('/blog/:id',  (req, res) => {
   }
   let usert = await Trainers.findOne({"email":req.body.emailt});
   if(!usert){
-    console.log("not user")
+    console.log("not trainer")
   //  res.status(401).send('not user')
   }
   else{
